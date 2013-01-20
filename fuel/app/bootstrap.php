@@ -1,5 +1,9 @@
 <?php
 
+  if($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_REQUEST['_method'])) {
+    $_SERVER['HTTP_X_HTTP_METHOD_OVERRIDE'] = $_REQUEST['_method'];
+  }
+
 // Load in the Autoloader
 require COREPATH.'classes'.DIRECTORY_SEPARATOR.'autoloader.php';
 class_alias('Fuel\\Core\\Autoloader', 'Autoloader');
