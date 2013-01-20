@@ -43,21 +43,65 @@
     # POST /resources
     public function action_create() {
       $resource = $this->new_resource();
+
       # Create
+      $resource->set(Input::post('resource'));
+
+      if( !$resource->validates() ) {
+
+        # Validation failed
+        $data = array();
+        $data['resource'] = $resource;
+        return Response::forge(View::forge('resources/new', $data));
+      }
+
+      if( Input::post('_confirm') ) {
+
+        # Confirm
+        $data = array();
+        $data['resource'] = $resource;
+        return Response::forge(View::forge('resources/confirm', $data));
+      }
+
+      # Save
+      $resource->save();
       return Response::redirect("/resources/$resource->id");
     }
 
     # PUT /resources/:id
     public function action_update() {
       $resource = $this->get_resource();
+
       # Update
+      $resource->set(Input::put('resource'));
+
+      if( !$resource->validates() ) {
+
+        # Validation failed
+        $data = array();
+        $data['resource'] = $resource;
+        return Response::forge(View::forge('resources/edit', $data));
+      }
+
+      if( Input::put('_confirm') ) {
+
+        # Confirm
+        $data = array();
+        $data['resource'] = $resource;
+        return Response::forge(View::forge('resources/confirm', $data));
+      }
+
+      # Save
+      $resource->save();
       return Response::redirect("/resources/$resource->id");
     }
 
     # DELETE /resources/:id
     public function action_destroy() {
       $resource = $this->get_resource();
+
       # Delete
+      $resource->delete();
       return Response::redirect("/resources");
     }
 
@@ -66,11 +110,11 @@
     }
 
     private function new_resource() {
-      return new Resource();
+      return Resource::forge();
     }
 
     private function get_resource() {
       $id = $this->request->named_params['id'];
-      return Resource::find(array('where' => array('id' => $id)))[0];
+      return Resource::find_by_pk($id);
     }
   }

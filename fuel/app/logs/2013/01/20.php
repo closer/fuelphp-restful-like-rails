@@ -51,3 +51,33 @@ Error - 2013-01-20 20:12:35 --> 8 - Undefined property: Model\Resource::$id in /
 Error - 2013-01-20 20:16:14 --> 8 - Undefined variable: resource in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/views/resources/edit.php on line 2
 Error - 2013-01-20 20:22:12 --> 8 - Use of undefined constant title - assumed 'title' in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/views/resources/index.php on line 3
 Error - 2013-01-20 20:23:25 --> 8 - Undefined property: Model\Resource::$id in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/classes/controller/resources.php on line 47
+Error - 2013-01-20 20:37:55 --> Error - Class 'Resourc' not found in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/classes/controller/resources.php on line 79
+Error - 2013-01-20 20:38:11 --> 4096 - Argument 1 passed to Fuel\Core\Model_Crud::set() must be of the type array, none given, called in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/classes/controller/resources.php on line 50 and defined in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/core/classes/model/crud.php on line 399
+Error - 2013-01-20 20:38:39 --> 4096 - Argument 1 passed to Fuel\Core\Model_Crud::set() must be of the type array, none given, called in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/classes/controller/resources.php on line 50 and defined in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/core/classes/model/crud.php on line 399
+Error - 2013-01-20 20:38:57 --> 8 - Undefined property: Model\Resource::$id in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/classes/controller/resources.php on line 52
+Error - 2013-01-20 20:43:13 --> 2 - Invalid argument supplied for foreach() in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/views/resources/index.php on line 3
+Error - 2013-01-20 20:44:04 --> Error - Call to undefined function pront_r() in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/views/resources/index.php on line 2
+Error - 2013-01-20 20:52:06 --> Compile Error - Can't use function return value in write context in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/classes/controller/resources.php on line 62
+Error - 2013-01-20 20:52:43 --> Compile Error - Can't use function return value in write context in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/classes/controller/resources.php on line 62
+Error - 2013-01-20 20:52:53 --> Compile Error - Can't use function return value in write context in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/classes/controller/resources.php on line 62
+Error - 2013-01-20 21:06:35 --> Parsing Error - syntax error, unexpected '{' in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/classes/controller/resources.php on line 68
+Error - 2013-01-20 21:06:43 --> Parsing Error - syntax error, unexpected '{' in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/classes/controller/resources.php on line 68
+Error - 2013-01-20 21:07:03 --> Parsing Error - syntax error, unexpected '{' in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/classes/controller/resources.php on line 68
+Error - 2013-01-20 21:07:27 --> Parsing Error - syntax error, unexpected '{' in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/classes/controller/resources.php on line 68
+Error - 2013-01-20 21:07:50 --> Parsing Error - syntax error, unexpected '{' in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/classes/controller/resources.php on line 71
+Error - 2013-01-20 21:07:52 --> Parsing Error - syntax error, unexpected '{' in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/classes/controller/resources.php on line 71
+Error - 2013-01-20 21:08:25 --> Parsing Error - syntax error, unexpected '{' in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/classes/controller/resources.php on line 71
+Error - 2013-01-20 21:09:04 --> Parsing Error - syntax error, unexpected '{' in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/classes/controller/resources.php on line 50
+Error - 2013-01-20 21:10:51 --> Parsing Error - syntax error, unexpected '{' in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/classes/controller/resources.php on line 78
+Error - 2013-01-20 21:20:04 --> 8 - Undefined property: Model\Resource::$id in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/views/resources/edit.php on line 2
+Error - 2013-01-20 21:33:45 --> 8 - Undefined property: Model\Resource::$title in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/views/resources/new.php on line 6
+Error - 2013-01-20 21:34:51 --> 8 - Undefined property: Model\Resource::$title in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/views/resources/new.php on line 6
+Error - 2013-01-20 21:35:54 --> 8 - Undefined property: Model\Resource::$title in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/views/resources/new.php on line 6
+Error - 2013-01-20 21:38:19 --> 8 - Undefined property: Model\Resource::$title in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/views/resources/new.php on line 6
+Error - 2013-01-20 21:39:30 --> 8 - Undefined property: Model\Resource::$title in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/views/resources/new.php on line 6
+Error - 2013-01-20 21:41:31 --> Error - Method "defaults" does not exist. in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/core/classes/model/crud.php on line 311
+Error - 2013-01-20 21:44:40 --> Error - Method "defaults" does not exist. in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/core/classes/model/crud.php on line 311
+Error - 2013-01-20 21:44:44 --> Error - Method "defaults" does not exist. in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/core/classes/model/crud.php on line 311
+Error - 2013-01-20 21:44:55 --> 8 - Undefined property: Model\Resource::$title in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/views/resources/new.php on line 6
+Error - 2013-01-20 21:45:34 --> 8 - Undefined property: Model\Resource::$title in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/views/resources/new.php on line 6
+Error - 2013-01-20 21:45:46 --> Error - Undefined class constant '_defaults' in /Users/closer/Dropbox/Projects/pjcms_crud/fuel/app/classes/model/resource.php on line 30
