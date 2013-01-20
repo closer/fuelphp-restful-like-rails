@@ -13,7 +13,7 @@ s = HTTPServer.new(
 )
 
 s.rewrite /\/(?<url>assets.*)/, '/\k<url>'
-s.rewrite /\/(?<url>.*)/, '/index.php'
+s.rewrite /\/(?<url>.*)/, '/index.php/\k<url>'
 s.mount '/', HTTPServlet::FileHandler, dir, :FancyIndexing => true, :HandlerTable => { 'php' => HTTPServlet::PHPHandler }
 
 trap('INT') { s.shutdown }
