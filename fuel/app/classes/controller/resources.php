@@ -6,7 +6,7 @@
 
     # GET /resources
     public function action_index() {
-      $resources = $this->get_resources();
+      $resources = $this->resources();
 
       $data = array();
       $data['resources'] = $resources;
@@ -15,7 +15,7 @@
 
     # GET /resources/:id
     public function action_show() {
-      $resource = $this->get_resource();
+      $resource = $this->resource();
 
       $data = array();
       $data['resource'] = $resource;
@@ -33,7 +33,7 @@
 
     # GET /resources/:id/edit
     public function action_edit() {
-      $resource = $this->get_resource();
+      $resource = $this->resource();
 
       $data = array();
       $data['resource'] = $resource;
@@ -42,7 +42,7 @@
 
     # POST /resources
     public function action_create() {
-      $resource = $this->new_resource();
+      $resource = $this->resource();
 
       # Create
       $resource->set(Input::post('resource'));
@@ -70,7 +70,7 @@
 
     # PUT /resources/:id
     public function action_update() {
-      $resource = $this->get_resource();
+      $resource = $this->resource();
 
       # Update
       $resource->set(Input::put('resource'));
@@ -98,23 +98,21 @@
 
     # DELETE /resources/:id
     public function action_destroy() {
-      $resource = $this->get_resource();
+      $resource = $this->resource();
 
       # Delete
       $resource->delete();
       return Response::redirect("/resources");
     }
 
-    private function get_resources() {
+    # 継承したクラス側でここを上書きする
+    private function resources() {
       return Resource::find_all();
     }
 
-    private function new_resource() {
-      return Resource::forge();
-    }
-
-    private function get_resource() {
+    # 継承したクラス側でここを上書きする
+    private function resource() {
       $id = $this->request->named_params['id'];
-      return Resource::find_by_pk($id);
+      return $id ? Resource::find_by_pk($id) : Resource::forge();
     }
   }
